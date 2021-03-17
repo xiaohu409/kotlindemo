@@ -19,6 +19,7 @@ class MainActivity : BaseActivity() {
 
     override fun initUI() {
         binding.tvId.text = "胡桃";
+        binding.tvId.setTextColor(resources.getColor(R.color.colorAccent))
     }
 
 }
