@@ -1,4 +1,4 @@
-package com.github.kotlindemo
+package com.github.kotlindemo.base
 
 import android.view.View
 
