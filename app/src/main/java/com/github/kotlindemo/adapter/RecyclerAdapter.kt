@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.kotlindemo.bean.ListBean
 import com.github.kotlindemo.databinding.RecyclerItemBinding
 
+/**
+ * 适配器
+ */
 class RecyclerAdapter(var list : MutableList<ListBean>) : RecyclerView.Adapter<RecyclerAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {

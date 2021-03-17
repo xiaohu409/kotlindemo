@@ -9,7 +9,9 @@ import com.github.kotlindemo.databinding.ActivityRecyclerBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-
+/**
+ * RecyclerView列表
+ */
 open class RecyclerActivity : BaseActivity() {
 
     private lateinit var list : MutableList<ListBean>;

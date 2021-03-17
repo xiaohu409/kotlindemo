@@ -4,6 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * activity 基类
+ */
 abstract class BaseActivity : AppCompatActivity(), BaseUI, BaseData, View.OnClickListener {
 
     protected lateinit var activity : AppCompatActivity;

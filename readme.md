@@ -6,13 +6,13 @@
     在Google I/O 2017中，Google 宣布 Kotlin 成为 Android 官方开发语言。
     
 ### 使用Kotlin实现Android Hello World
-    view 的实例化使用ViewBinding
+    View 的实例化使用ViewBinding
     在使用Kotlin开发Android时 操作view属性时 直接变量.属性名称就可以了
     例如 修改TextView text属性文本 
     tvId.text = "hutao"
     
 ### 使用Kotlin实现Android RecyclerView
-    view 的实例化使用ViewBinding
+    View 的实例化使用ViewBinding
     实现列表的显示
     添加点击事件  
     

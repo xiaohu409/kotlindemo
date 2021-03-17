@@ -5,7 +5,9 @@ import android.view.View
 import com.github.kotlindemo.base.BaseActivity
 import com.github.kotlindemo.databinding.ActivityMainBinding
 
-
+/**
+ * 主界面
+ */
 class MainActivity : BaseActivity() {
 
     private lateinit var binding : ActivityMainBinding;
