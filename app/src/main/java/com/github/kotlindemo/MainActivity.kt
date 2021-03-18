@@ -30,14 +30,18 @@ class MainActivity : BaseActivity() {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn_id -> {
-                var intent = Intent(activity, RecyclerActivity().javaClass);
+                var intent = Intent(activity, RecyclerActivity::class.java);
                 startActivity(intent);
             }
         }
     }
 
     override fun bindData() {
-
+        var t = A();
+        t.a(this);
+        println();
+        val numbers = listOf(1, 2, 3)
+        println(numbers.filter(t::isOdd))
     }
 
 
