@@ -1,7 +1,9 @@
-package com.github.kotlindemo
+package com.github.kotlindemo.activity
 
 import android.content.Intent
 import android.view.View
+import com.github.kotlindemo.A
+import com.github.kotlindemo.R
 import com.github.kotlindemo.base.BaseActivity
 import com.github.kotlindemo.databinding.ActivityMainBinding
 
@@ -38,7 +40,7 @@ class MainActivity : BaseActivity() {
 
     override fun bindData() {
         var t = A();
-        t.a(this);
+        t.a();
         println();
         val numbers = listOf(1, 2, 3)
         println(numbers.filter(t::isOdd))

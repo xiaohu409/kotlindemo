@@ -1,7 +1,8 @@
-package com.github.kotlindemo
+package com.github.kotlindemo.activity
 
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.github.kotlindemo.R
 import com.github.kotlindemo.adapter.RecyclerAdapter
 import com.github.kotlindemo.base.BaseActivity
 import com.github.kotlindemo.bean.ListBean
