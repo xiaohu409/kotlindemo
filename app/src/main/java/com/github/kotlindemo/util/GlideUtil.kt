@@ -8,7 +8,7 @@ import com.github.kotlindemo.R
 
 object GlideUtil {
 
-    lateinit var context: Context;
+    private lateinit var context: Context;
 
     fun initGlideUtil(context: Context) {
         this.context = context;

@@ -20,7 +20,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转"
-        android:id="@+id/btn_id"/>
+        android:text="RecyclerView"
+        android:id="@+id/rv_btn_id"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CameraX"
+        android:id="@+id/camera_btn_id"/>
 </LinearLayout>

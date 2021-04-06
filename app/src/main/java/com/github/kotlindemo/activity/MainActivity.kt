@@ -26,15 +26,22 @@ class MainActivity : BaseActivity() {
     override fun initUI() {
         binding.tvId.text = "胡桃";
         binding.tvId.setTextColor(resources.getColor(R.color.colorAccent))
-        binding.btnId.setOnClickListener(this);
+        binding.rvBtnId.setOnClickListener(this);
+        binding.cameraBtnId.setOnClickListener(this);
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btn_id -> {
+            R.id.rv_btn_id -> {
                 var intent = Intent(activity, RecyclerActivity::class.java);
                 startActivity(intent);
             }
+
+            R.id.camera_btn_id -> {
+                var intent = Intent(activity, CameraXActivity::class.java);
+                startActivity(intent);
+            }
+
         }
     }
 
@@ -45,6 +52,8 @@ class MainActivity : BaseActivity() {
         val numbers = listOf(1, 2, 3)
         println(numbers.filter(t::isOdd))
     }
+
+
 
 
 }
