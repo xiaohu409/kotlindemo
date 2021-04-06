@@ -14,7 +14,7 @@ import com.google.common.util.concurrent.ListenableFuture
 class CameraXActivity : BaseActivity() {
 
     private lateinit var binding: ActivityCameraXBinding;
-    private lateinit var cameraProviderFuture : ListenableFuture<ProcessCameraProvider>
+    private lateinit var cameraProviderFuture: ListenableFuture<ProcessCameraProvider>
 
     override fun getLayoutId(): Int {
         return R.layout.activity_camera_x;
@@ -36,16 +36,17 @@ class CameraXActivity : BaseActivity() {
         }, ContextCompat.getMainExecutor(this));
     }
 
-    private fun bindPreview(cameraProvider : ProcessCameraProvider) {
-        var preview : Preview = Preview.Builder()
+    private fun bindPreview(cameraProvider: ProcessCameraProvider) {
+        var preview: Preview = Preview.Builder()
             .build();
 
-        var cameraSelector : CameraSelector = CameraSelector.Builder()
+        var cameraSelector: CameraSelector = CameraSelector.Builder()
             .requireLensFacing(CameraSelector.LENS_FACING_BACK)
             .build();
 
         preview.setSurfaceProvider(binding.previewView.surfaceProvider);
 
-        var camera = cameraProvider.bindToLifecycle(this as LifecycleOwner, cameraSelector, preview);
+        var camera =
+            cameraProvider.bindToLifecycle(this as LifecycleOwner, cameraSelector, preview);
     }
 }

@@ -6,6 +6,9 @@ import androidx.camera.core.CameraXConfig
 import com.github.kotlindemo.util.GlideUtil
 import com.github.kotlindemo.util.ToastUtil
 
+/**
+ * App
+ */
 open class App : Application(), CameraXConfig.Provider {
 
     override fun onCreate() {
