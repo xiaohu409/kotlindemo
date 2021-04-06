@@ -11,6 +11,9 @@ import com.github.kotlindemo.base.BaseActivity
 import com.github.kotlindemo.databinding.ActivityCameraXBinding
 import com.google.common.util.concurrent.ListenableFuture
 
+/**
+ * 相机预览界面
+ */
 class CameraXActivity : BaseActivity() {
 
     private lateinit var binding: ActivityCameraXBinding;

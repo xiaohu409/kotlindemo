@@ -75,12 +75,18 @@ class MainActivity : BaseActivity() {
         }
     }
 
+    /**
+     * 授予权限回调
+     */
     override fun grant(requestCode: Int) {
         ToastUtil.showShort("授予权限");
         var intent = Intent(activity, CameraXActivity::class.java);
         startActivity(intent);
     }
 
+    /**
+     * 拒绝权限回调
+     */
     override fun denied(requestCode: Int) {
         ToastUtil.showShort("拒绝权限");
     }

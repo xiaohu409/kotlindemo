@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 abstract class BaseActivity : AppCompatActivity(), BaseUI, BaseData, View.OnClickListener, BasePermission {
 
     protected lateinit var activity : AppCompatActivity;
+    //权限code
     protected var requestCameraXCode: Int = 0x01;
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,9 @@ abstract class BaseActivity : AppCompatActivity(), BaseUI, BaseData, View.OnClic
 
     }
 
+    /**
+     * 权限
+     */
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         when (requestCode) {
@@ -40,6 +44,9 @@ abstract class BaseActivity : AppCompatActivity(), BaseUI, BaseData, View.OnClic
         }
     }
 
+    /**
+     * 遍历权限组结果
+     */
     private fun hasPermission(grantResults: IntArray): Boolean {
         for (result: Int in grantResults) {
             if (result == PackageManager.PERMISSION_DENIED) {
@@ -49,10 +56,16 @@ abstract class BaseActivity : AppCompatActivity(), BaseUI, BaseData, View.OnClic
         return true;
     }
 
+    /**
+     * 回调方法
+     */
     override fun grant(requestCode: Int) {
 
     }
 
+    /**
+     * 回调方法
+     */
     override fun denied(requestCode: Int) {
 
     }
