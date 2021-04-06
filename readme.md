@@ -14,5 +14,9 @@
 ### 使用Kotlin实现Android RecyclerView
     View 的实例化使用ViewBinding
     实现列表的显示
-    添加点击事件  
+    添加点击事件
+    
+### 使用Kotlin实现CameraX使用
+
+### 使用Kotlin实现权限请求       
     
